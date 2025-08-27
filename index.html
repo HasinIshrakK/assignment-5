@@ -7,24 +7,47 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="mx-16 py-6">
-        <div class="flex items-center gap-1">
+    <nav class="flex mx-2.5 sm:mx-16 py-6 justify-between items-center">
+        <div class="flex items-center gap-2.5">
             <img src="assets/logo.png" alt="Logo" class="max-h-12 max-w-12">
-            <h2 class="font-extrabold text-green-800">
+            <h2 class="font-extrabold text-green-800 text-2xl">
                 Emergency <br> Service
             </h2>
         </div>
-        <div>
-            <p>
-
+        <div class="sm:flex gap-5">
+            <p class="sm:mb-0 mb-1 flex bg-blue-50 px-9 py-2.5 font-semibold rounded-4xl gap-2.5 justify-center items-center">
+                <span id="heart">
+                    0
+                </span>
+                <img class="max-h-8 max-w-8" src="assets/heart.png" alt="Heart">
             </p>
-            <p>
-
+            <p class="sm:mb-0 mb-1 flex bg-blue-50 px-9 py-3.5 font-semibold rounded-4xl gap-2.5 justify-center items-center">
+                <span id="coin">
+                    100
+                </span>
+                <img class="max-h-7 max-w-7" src="assets/coin.png" alt="Coin">
             </p>
-            <p>
-
+            <p class="flex bg-green-500 gap-2 px-9 py-3.5 text-white font-semibold rounded-4xl justify-center items-center">
+                <span id="copy">
+                    0
+                </span>
+                Copy
             </p>
         </div>
     </nav>
+
+
+    <header class="flex flex-col justify-center sm:items-center bg-green-950 text-white p-5">
+        <img class="max-h-24 max-w-24" src="assets/logo-dark.png" alt="Logo">
+        <h1 class="text-4xl my-2.5">
+            Emergency Service Directory
+        </h1>
+        <p class="text-2xl">
+            Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh
+        </p>
+    </header>
+    
+    
+    <script src="js/scripts.js"></script>
 </body>
 </html>
