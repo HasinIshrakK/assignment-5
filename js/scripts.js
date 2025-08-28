@@ -32,7 +32,9 @@ document.getElementById("like 9").addEventListener('click', function increaseHea
 let coins = document.getElementById("coin");
 let cn = parseInt(coins.innerText);
 
-console.log(coins);
+// console.log(coins);
+
+let hist = document.getElementById("add");
 
 const c = document.getElementsByClassName("call");
 
@@ -53,8 +55,16 @@ for (let index = 0; index < c.length; index++) {
                const n3 = element.parentNode.parentNode.children[0].children[3].innerText;
                alert("📞 Calling" + " " + n1 + " " + n3 + "...");
                // console.log(element.parentNode.parentNode.children[0].children[1].innerText);
+
                cn = parseInt(cn) - 20;
                coins.innerText = cn;
+               let hst1 = document.createElement("h1");
+               let hst2 = document.createElement("p");
+               // console.log(hst.textContent = "Hello");
+               hst1.textContent = element.parentNode.parentNode.children[0].children[1].innerText;
+               hst2.textContent = element.parentNode.parentNode.children[0].children[3].innerText;
+               hist.appendChild(hst1);
+               hist.appendChild(hst2);
           }
           else {
                alert("❌ You don't have sufficient balance. You need at least 20 coins to make a call.");
