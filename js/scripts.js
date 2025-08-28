@@ -83,12 +83,11 @@ for (let index = 0; index < c.length; index++) {
 }
 
 
-const clone = hist.cloneNode(true);
 
 document.getElementById("clr").addEventListener('click', function () {
-     hist.innerHTML = "";
-     hist.replaceWith(clone.cloneNode(true));
-     hist = document.getElementById("add");
+     while (hist.children.length > 1) {
+          hist.removeChild(hist.lastChild);
+     }
 })
 
 
