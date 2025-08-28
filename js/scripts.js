@@ -58,13 +58,20 @@ for (let index = 0; index < c.length; index++) {
 
                cn = parseInt(cn) - 20;
                coins.innerText = cn;
+               let hst0 = document.createElement("div");
                let hst1 = document.createElement("h1");
                let hst2 = document.createElement("p");
                // console.log(hst.textContent = "Hello");
+               hst0.style.backgroundColor = "rgba(211, 211, 211, 0.2)";
+               hst0.classList.add("shundor");
+               hst1.style.fontSize = "24px";
+               hst1.style.fontWeight = 600;
+               hst2.style.color = "gray";
                hst1.textContent = element.parentNode.parentNode.children[0].children[1].innerText;
                hst2.textContent = element.parentNode.parentNode.children[0].children[3].innerText;
-               hist.appendChild(hst1);
-               hist.appendChild(hst2);
+               hst0.appendChild(hst1);
+               hst0.appendChild(hst2);
+               hist.appendChild(hst0);
           }
           else {
                alert("❌ You don't have sufficient balance. You need at least 20 coins to make a call.");
@@ -74,6 +81,33 @@ for (let index = 0; index < c.length; index++) {
 }
 
 // console.log(cs);
+
+
+const clone = hist.cloneNode(true);
+
+document.getElementById("clr").addEventListener('click', function () {
+     // if (hist.childElementCount > 1) {
+     //      for (let index = 0; index < (hist.childElementCount.length - 1); index++) {
+     //           // const element = hist.childElementCount[index];
+     //           hist.removeChild(hist.lastElementChild);
+
+     //      }
+     // }
+     // console.log(hist.childElementCount);
+     // for (let i = 0; i < hist.childElementCount; i++) {
+     //      // const element = hist.lastElementChild[i];
+     //      // console.log(hist.lastElementChild);
+     //      if (hist.childElementCount > 1) {
+     //           hist.removeChild(hist.lastElementChild);
+     //      }
+     //      else {
+     //           break;
+     //      }
+     // }
+     hist.innerHTML = "";
+     hist.replaceWith(clone.cloneNode(true));
+     hist = document.getElementById("add");
+})
 
 
 copies = document.getElementById("copy");
