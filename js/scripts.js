@@ -1,37 +1,69 @@
 hearts = document.getElementById("heart");
 
 document.getElementById("like 1").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 2").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 3").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 4").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 5").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 6").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 7").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 8").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 document.getElementById("like 9").addEventListener('click', function increaseHeart() {
-     hearts.innerText = parseInt(hearts.innerText) + 1 
+     hearts.innerText = parseInt(hearts.innerText) + 1
 })
 
 
+let coins = document.getElementById("coin");
+let cn = parseInt(coins.innerText);
 
-coins = document.getElementById("coin");
+console.log(coins);
 
+const c = document.getElementsByClassName("call");
+
+// console.log(c);
+
+let cs = []
+
+for (let index = 0; index < c.length; index++) {
+     const element = c[index];
+     // console.log(element);
+     // cs.push(element[index]);
+     // let text = element.innerText;
+     // console.log(text);
+     element.addEventListener('click', function () {
+          // console.log(987);
+          if (parseInt(cn) > 0) {
+               const n1 = element.parentNode.parentNode.children[0].children[1].innerText;
+               const n3 = element.parentNode.parentNode.children[0].children[3].innerText;
+               alert("📞 Calling" + " " + n1 + " " + n3 + "...");
+               // console.log(element.parentNode.parentNode.children[0].children[1].innerText);
+               cn = parseInt(cn) - 20;
+               coins.innerText = cn;
+          }
+          else {
+               alert("❌ You don't have sufficient balance. You need at least 20 coins to make a call.");
+          }
+     })
+
+}
+
+// console.log(cs);
 
 
 copies = document.getElementById("copy");
