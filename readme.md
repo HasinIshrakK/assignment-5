@@ -7,7 +7,7 @@
 - And there's a difference between getElementByClassName() and querySelectorAll() that the first one gets live HTML list and the other one gets a static NodeList.
 
 ### 2.
-document.createElement("") is the method to create an element inside the DOM. Within the parentheses the element name should be written like div, p, li etc.
+- document.createElement("") is the method to create an element inside the DOM. Within the parentheses the element name should be written like div, p, li etc.
 - And to insert it you need to use appendChild() method to insert into a parent element. If you have no parent to do so then you have 'body' at least.
 
 ### 3.
