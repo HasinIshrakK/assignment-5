@@ -1,10 +1,10 @@
 ## Answering The Questions:
 
 ### 1.
-getElementById() is for accessing the element which has the mentioned ID,
-getElementByClassName() is for accessing through a common class,
-querySelector() and querySelectorAll() both access the elements with mentioned selectors which are no more to class or ID and the difference between these two is that querySelector() only gets the first element which fulfils the requirement and the other one gets all of the elements.
-And there's a difference between getElementByClassName() and querySelectorAll() that the first one gets live HTML list and the other one gets a static NodeList.
+- getElementById() is for accessing the element which has the mentioned ID,
+- getElementByClassName() is for accessing through a common class,
+- querySelector() and querySelectorAll() both access the elements with mentioned selectors which are no more to class or ID and the difference between these two is that querySelector() only gets the first element which fulfils the requirement and the other one gets all - of the elements.
+- And there's a difference between getElementByClassName() and querySelectorAll() that the first one gets live HTML list and the other one gets a static NodeList.
 
 ### 2.
 document.createElement("") is the method to create an element inside the DOM. Within the parentheses the element name should be written like div, p, li etc.
@@ -16,8 +16,8 @@ Event Bubbling is like the events are triggered from child to its parents and so
 Event Delegation is like adding an event listener to an element and all of its children get the same event listener. This is very useful as you don't need to add event listener separately to every element inside the parent element. This makes the code clean, lighter, easier etc.
 
 ### 5.
-preventDefault() works like its name says, it disables the default function of the applied function. For example 'form' always loads the page by default.
-stopPropagation() also works according to its name as it stops the propagation of bubbling or capturing type things which means the flow stops right there where the code is applied.
+- preventDefault() works like its name says, it disables the default function of the applied function. For example 'form' always loads the page by default.
+- stopPropagation() also works according to its name as it stops the propagation of bubbling or capturing type things which means the flow stops right there where the code is applied.
 
 
 ### Note: I really am sorry for being so informal in these answers. I couldn't help but being informal as my formal writing is not so good and I was asked to write by my ownself.
