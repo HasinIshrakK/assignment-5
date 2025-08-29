@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <style>
         .s {
             display: block;
@@ -19,7 +24,7 @@
     </style>
 </head>
 
-<body>
+<body class="h">
     <nav class="sm:flex mx-2.5 sm:mx-16 py-6 justify-between items-center">
         <div class="flex items-center gap-2.5 mb-2.5">
             <img src="assets/logo.png" alt="Logo" class="max-h-12 max-w-12">
@@ -35,14 +40,14 @@
                 <img class="max-h-8 max-w-8" src="assets/heart.png" alt="Heart">
             </p>
             <p class="flex bg-blue-50 px-9 py-3.5 font-semibold rounded-4xl gap-2.5 justify-center items-center">
-                <span id="coin">
+                <span id="coin" class="inter">
                     100
                 </span>
                 <img class="max-h-7 max-w-7" src="assets/coin.png" alt="Coin">
             </p>
             <p
                 class="flex bg-green-500 gap-2 px-9 py-3.5 text-white font-semibold rounded-4xl justify-center items-center">
-                <span id="copy">
+                <span id="copy" class="inter">
                     0
                 </span>
                 Copy
@@ -51,7 +56,8 @@
     </nav>
 
 
-    <header class="flex flex-col justify-center sm:items-center bg-gradient-to-b sm:bg-gradient-to-r from-green-950 via-green-800 to-green-950 text-white p-5">
+    <header
+        class="flex flex-col justify-center sm:items-center bg-gradient-to-b sm:bg-gradient-to-r from-green-950 via-green-800 to-green-950 text-white p-5">
         <img class="max-h-24 max-w-24" src="assets/logo-dark.png" alt="Logo">
         <h1 class="text-4xl my-2.5">
             Emergency Service Directory
