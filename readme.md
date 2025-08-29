@@ -8,6 +8,7 @@
 
 ### 2.
 document.createElement("") is the method to create an element inside the DOM. Within the parentheses the element name should be written like div, p, li etc.
+- And to insert it you need to use appendChild() method to insert into a parent element. If you have no parent to do so then you have 'body' at least.
 
 ### 3.
 Event Bubbling is like the events are triggered from child to its parents and so on like a bubble is going upwards and triggering the events in its way to the very first ancestor.
