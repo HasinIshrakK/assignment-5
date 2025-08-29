@@ -1,3 +1,4 @@
+// for hearts
 hearts = document.getElementById("heart");
 
 document.getElementById("like 1").addEventListener('click', function increaseHeart() {
@@ -29,6 +30,7 @@ document.getElementById("like 9").addEventListener('click', function increaseHea
 })
 
 
+// for calling
 let coins = document.getElementById("coin");
 let cn = parseInt(coins.innerText);
 
@@ -83,7 +85,6 @@ for (let index = 0; index < c.length; index++) {
 }
 
 
-
 document.getElementById("clr").addEventListener('click', function () {
      while (hist.children.length > 1) {
           hist.removeChild(hist.lastChild);
@@ -91,4 +92,25 @@ document.getElementById("clr").addEventListener('click', function () {
 })
 
 
-copies = document.getElementById("copy");
+// for copying
+const copies = document.getElementById("copy");
+
+
+// Warning!:The code written for copying in the upcoming lines aren't my very own effort as it was said to use ChatGPT. Those are mainly copy paste thing. I tried to understand it and understand a great part but there were some problems I faced. So, I am looking forward to get some modules on foreach, navigator, catch, error handling etc. If this line bothers you then ignore it kindly.
+
+const cpBtns = document.querySelectorAll(".copied");
+
+cpBtns.forEach(button => {
+     button.addEventListener("click", function () {
+          const card = button.closest(".card");
+          const txtCp = card.querySelector(".description").innerText;
+          copies.innerText = parseInt(copies.innerText) + 1;  // this line is obviously mine
+          navigator.clipboard.writeText(txtCp)
+               .then(() => {
+                    alert("Number copied to clipboard: " + txtCp);
+               })
+               .catch(err => {
+                    console.error("Failed to copy text: ", err);
+               });
+     });
+});
