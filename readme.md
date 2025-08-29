@@ -3,11 +3,12 @@
 ### 1.
 - getElementById() is for accessing the element which has the mentioned ID,
 - getElementByClassName() is for accessing through a common class,
-- querySelector() and querySelectorAll() both access the elements with mentioned selectors which are no more to class or ID and the difference between these two is that querySelector() only gets the first element which fulfils the requirement and the other one gets all of the elements.
+- querySelector() and querySelectorAll() both access the elements with mentioned selectors which are no more bound to class or ID and the difference between these two is that querySelector() only gets the first element of those which fulfil the requirement and the other one gets all of the elements.
 - And there's a difference between getElementByClassName() and querySelectorAll() that the first one gets live HTML list and the other one gets a static NodeList.
 
 ### 2.
-document.createElement("") is the method to create an element inside the DOM. Within the parentheses the element name should be written like div, p, li etc.
+- document.createElement("") is the method to create an element inside the DOM. Within the parentheses the element name should be written like div, p, li etc.
+- And to insert it you need to use appendChild() method to insert into a parent element. If you have no parent to do so then you have 'body' at least.
 
 ### 3.
 Event Bubbling is like the events are triggered from child to its parents and so on like a bubble is going upwards and triggering the events in its way to the very first ancestor.
