@@ -21,11 +21,23 @@
             display: block;
             width: calc(50% - 10px);
         }
+        button:hover{
+            background-color: yellowgreen;
+            color: white;
+            border: none;
+            transform: scale(1.1);
+            transition: background-color 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 
 <body class="h">
-    <nav class="sm:flex mx-2.5 sm:mx-16 py-6 justify-between items-center">
+    <nav class="sm:flex px-2.5 sm:px-16 py-6 justify-between items-center sticky top-0 z-50 bg-white shadow-md">
         <div class="flex items-center gap-2.5 mb-2.5">
             <img src="assets/logo.png" alt="Logo" class="max-h-12 max-w-12">
             <h2 class="font-extrabold text-green-800 text-2xl">
@@ -72,13 +84,13 @@
     <main class="bg-blue-50">
         <section class="grid sm:grid-cols-2 xl:grid-cols-4 grid-cols-1 gap-8 mx-2.5 sm:mx-16 py-6">
             <!-- 1 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-1">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-1">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/emergency.png" alt="Emergency" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 1" class="text-gray-500 text-2xl">
+                        <button id="like 1" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -107,13 +119,13 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-3">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-3">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-blue-100">
                             <img src="assets/police.png" alt="Police" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 2" class="text-gray-500 text-2xl">
+                        <button id="like 2" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -142,13 +154,13 @@
                 </div>
             </div>
             <!-- 3 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-4">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-4">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/fire-service.png" alt="Fire Service" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 3" class="text-gray-500 text-2xl">
+                        <button id="like 3" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -177,7 +189,7 @@
                 </div>
             </div>
             <!-- extra -->
-            <div class="row-span-3 sm:row-span-9 bg-white p-6 rounded-lg order-first sm:order-2 xl:order-4" id="add">
+            <div class="row-span-3 sm:row-span-9 bg-white p-6 rounded-lg order-first sm:order-2 xl:order-4 drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)]" id="add">
                 <div class="flex justify-between items-center mb-2">
                     <h1 class="text-2xl font-semibold">
                         <i class="fa-regular fa-clock text-gray-500"></i>
@@ -189,13 +201,13 @@
                 </div>
             </div>
             <!-- 4 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-5">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-5">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/ambulance.png" alt="Ambulance" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 4" class="text-gray-500 text-2xl">
+                        <button id="like 4" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -224,13 +236,13 @@
                 </div>
             </div>
             <!-- 5 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-6">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-6">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/emergency.png" alt="Emergency" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 5" class="text-gray-500 text-2xl">
+                        <button id="like 5" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -259,13 +271,13 @@
                 </div>
             </div>
             <!-- 6 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-7">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-7">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/emergency.png" alt="Emergency" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 6" class="text-gray-500 text-2xl">
+                        <button id="like 6" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -294,13 +306,13 @@
                 </div>
             </div>
             <!-- 7 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-8">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-8">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/emergency.png" alt="Emergency" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 7" class="text-gray-500 text-2xl">
+                        <button id="like 7" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -329,13 +341,13 @@
                 </div>
             </div>
             <!-- 8 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-9">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-9">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-red-100">
                             <img src="assets/brac.png" alt="Brac" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 8" class="text-gray-500 text-2xl">
+                        <button id="like 8" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
@@ -364,13 +376,13 @@
                 </div>
             </div>
             <!-- 9 -->
-            <div class="bg-white p-8 rounded-lg card sm:order-10">
+            <div class="bg-white p-8 rounded-lg card drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)] sm:order-10">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="px-3.5 py-3.5 max-h-16 max-w-16 rounded-2xl bg-yellow-100">
                             <img src="assets/Bangladesh-Railway.png" alt="Bangladesh-Railway" class="max-h-8 max-w-8'">
                         </div>
-                        <button id="like 9" class="text-gray-500 text-2xl">
+                        <button id="like 9" class="text-gray-500 text-2xl hover:!bg-transparent hover:!text-red-500 hvr">
                             <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>

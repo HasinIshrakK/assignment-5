@@ -3,14 +3,31 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 .h {
   font-family: "Hind Madurai", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+.hvr:hover {
+  text-shadow:
+    0 0 1px red,
+    0 0 2px red,
+    0 0 3px red,
+    0 0 4px red,
+    0 0 5px red,
+    0 0 6px red,
+    0 0 7px red,
+    0 0 8px red,
+    0 0 9px red,
+    0 0 10px red,
+    0 0 11px red,
+    0 0 12px red;
+}
+
 .shundor {
-    margin-top: 0.5rem;
-    border-radius: 10px;
-    padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem;
 }
