@@ -1,6 +1,6 @@
 ## Answering The Questions:
 
-###1.
+### 1.
 getElementById() is for accessing the element which has the mentioned ID,
 getElementByClassName() is for accessing through a common class,
 querySelector() and querySelectorAll() both access the elements with mentioned selectors which are no more to class or ID and the difference between these two is that querySelector() only gets the first element which fulfils the requirement and the other one gets all of the elements.
